@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+  <title>Whale Watcher</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+  <h1 id="title">
+  <span id="btc-logo"></span>
+  Whale Watcher 🐋
+</h1>
+
+
+  <div style="width:80%; margin:auto;">
+  <canvas id="chart"></canvas>
+</div>
+
+    <div id="alert" style="
+  display:none;
+  background:#0779f3;
+  color:rgb(255, 255, 255);
+  padding:15px;
+  position:fixed;
+  top:20px;
+  right:20px;
+  font-size:18px;
+  border-radius:6px;">
+  🐋 WHALE DETECTED!
+  <span id="amount"></span>
+</div>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
